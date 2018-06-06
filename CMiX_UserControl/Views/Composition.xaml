@@ -124,9 +124,8 @@
                         x:Name="MasterBeatControl"
                         DockPanel.Dock="Bottom"
                         FocusVisualStyle="{StaticResource FocusVisualStyle}"
-                        Focusable="True"
-                        MasterPeriod="{Binding DataContext.MasterPeriod[0], ElementName=cmix, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-                    <CMiX:Camera x:Name="CameraUserControl" DockPanel.Dock="Top"/>
+                        Focusable="True" />
+                    <CMiX:Camera x:Name="CameraUserControl" DockPanel.Dock="Top" />
                 </DockPanel>
             </Border>
             <Grid
@@ -154,7 +153,6 @@
                             x:Name="AddLayer"
                             Width="25"
                             Height="25"
-
                             Content="+"
                             DockPanel.Dock="left"
                             Style="{StaticResource BaseButtonStyle}" />
@@ -162,7 +160,6 @@
                             x:Name="RemoveLayer"
                             Width="25"
                             Height="25"
-
                             Content="-"
                             DockPanel.Dock="left"
                             Style="{StaticResource BaseButtonStyle}" />
@@ -185,9 +182,7 @@
                                 Drop="sp_Drop"
                                 PreviewMouseLeftButtonDown="sp_PreviewMouseLeftButtonDown"
                                 PreviewMouseLeftButtonUp="sp_PreviewMouseLeftButtonUp"
-                                PreviewMouseMove="sp_PreviewMouseMove">
-
-                            </StackPanel>
+                                PreviewMouseMove="sp_PreviewMouseMove" />
                             <StackPanel
                                 x:Name="LayerControlStack"
                                 Grid.Column="1"
